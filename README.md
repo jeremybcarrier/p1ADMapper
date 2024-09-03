@@ -41,10 +41,10 @@ The **ldapgateway.cfg** file has a number of parameters that need to be filled i
 *p1UniqueAttribute* - unique destination attribute for mapping into P1 (Valid P1 options are: accountId, email, externalId, mobilePhone, username, id)
 *p1Population* - the PingOne population into which NEW users should be created (Can be found in PingOne tenant: Directory -> Populations -> <Your population> -> Population ID)
 *runState* - The tool can take several different actions:
-   -     listAd: this option will list all of the AD users that are in the provided path, as well as the value of their unique mapping attribute
-   -    compare: this option will retrieve the list of user from AD, then compare them to the users in PingOne and report on whether the AD users will be created or updated
+   - listAd: this option will list all of the AD users that are in the provided path, as well as the value of their unique mapping attribute
+   - compare: this option will retrieve the list of user from AD, then compare them to the users in PingOne and report on whether the AD users will be created or updated
    - updateonly: this option will read the users from AD and then update any matching existing users in PingOne and will ignore any users that don't exist in PingOne
-   -   fullsync: this option will read the users from AD and then create any users that don't exist in PingOne and update users that do exist
+   - fullsync: this option will read the users from AD and then create any users that don't exist in PingOne and update users that do exist
 
 # To Operate
 Make sure the **ldapgateway.cfg** is filled in and is in the same directory as the script.  Then, simply execute the script (ex: /usr/local/bin/python3 ./ldapgateway.py)

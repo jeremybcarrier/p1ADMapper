@@ -1,5 +1,5 @@
 # PingOne AD Mapping Tool
-## Author: Jeremy Carrier
+### Author: Jeremy Carrier
 
 ## Notice
 This tool is not written by Ping Identity, and is supported via best-effort

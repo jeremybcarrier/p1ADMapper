@@ -33,13 +33,13 @@ The **ldapgateway.cfg** file has a number of parameters that need to be filled i
 - *adPath* - LDAP search path where users will be found (ex: ou=users,dc=mydomain,dc=com)
 - *p1Region* - TLD for the PingOne instance (United States = com, Canada = ca, Europe = eu, Asia = asia)
 - *p1Environment* - environment ID for the PingOne tenant (Can be found in PingOne tenant: Settings -> Environment Properties -> Environment ID)
-- *p1ClientId* - client ID for the PingOne worker (Can be found in PingOne tenant: Applications -> Applications -> <Your worker app> -> Configuration -> Client ID)
-- *p1ClientSecret* - client secret for the PingOne worker (Can be found in PingOne tenant: Applications -> Applications -> <Your worker app> -> Configuration -> Client Secret)
-- *p1GatewayId* - unique id of the P1 gateway instance (Can be found in PingOne tenant: Integrations -> Gateways -> <Your gateway> -> API -> id (ensure this is top level id, not a child of another JSON node))
-- *p1GatewayUserType* - unique id of the P1 gateway user type (Can be found in PingOne tenant: Integrations -> Gateways -> <Your gateway> -> API -> userTypes -> id)
+- *p1ClientId* - client ID for the PingOne worker (Can be found in PingOne tenant: Applications -> Applications -> *Your worker app* -> Configuration -> Client ID)
+- *p1ClientSecret* - client secret for the PingOne worker (Can be found in PingOne tenant: Applications -> Applications -> *Your worker app* -> Configuration -> Client Secret)
+- *p1GatewayId* - unique id of the P1 gateway instance (Can be found in PingOne tenant: Integrations -> Gateways -> *Your gateway* -> API -> id (ensure this is top level id, not a child of another JSON node))
+- *p1GatewayUserType* - unique id of the P1 gateway user type (Can be found in PingOne tenant: Integrations -> Gateways -> *Your gateway* -> API -> userTypes -> id)
 - *adUniqueAttribute* - unique source attribute for mapping from AD (ex. samaccountname)
 - *p1UniqueAttribute* - unique destination attribute for mapping into P1 (Valid P1 options are: accountId, email, externalId, mobilePhone, username, id)
-- *p1Population* - the PingOne population into which NEW users should be created (Can be found in PingOne tenant: Directory -> Populations -> <Your population> -> Population ID)
+- *p1Population* - the PingOne population into which NEW users should be created (Can be found in PingOne tenant: Directory -> Populations -> *Your population* -> Population ID)
 - *runState* - The tool can take several different actions:
    - listAd: this option will list all of the AD users that are in the provided path, as well as the value of their unique mapping attribute
    - compare: this option will retrieve the list of user from AD, then compare them to the users in PingOne and report on whether the AD users will be created or updated

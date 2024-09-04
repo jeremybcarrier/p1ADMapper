@@ -30,7 +30,7 @@ The **ldapgateway.cfg** file has a number of parameters that need to be filled i
 - *adSsl* - Is the provided port SSL or not? (y or n)
 - *adUsername* - DN of a user with the rights to be able to read from AD (ex: cn=myuser,cn=user,dc=mydomain,dc=com)
 - *adPassword* - password of the administrative user which will read from AD
-- *adPath* - LDAP search path where users will be found (ex: ou=users,dc=mydomain,dc=com)
+- *adPath* - LDAP search path where users will be found (ex: ou=users,dc=mydomain,dc=com) - note, special characters should escaped
 - *p1Region* - TLD for the PingOne instance (United States = com, Canada = ca, Europe = eu, Asia = asia)
 - *p1Environment* - environment ID for the PingOne tenant (Can be found in PingOne tenant: Settings -> Environment Properties -> Environment ID)
 - *p1ClientId* - client ID for the PingOne worker (Can be found in PingOne tenant: Applications -> Applications -> *Your worker app* -> Configuration -> Client ID)
